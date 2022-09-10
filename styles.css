@@ -1,0 +1,93 @@
+/* Estilos Globales */
+html{
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+}
+/* Contenido principal */
+.container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 2rem;
+}
+/* Contenido de Nuevo Proyecto */
+.c-newproject {
+    width: 50%;
+    font-size: 1.6rem;
+}
+/* Etiqueta de entrada y mensaje error */
+label, span{
+    display: block;
+    width: 100%;
+}
+span{
+    font-size: 1.1rem;
+    color: red;
+    visibility: hidden;
+}
+span.error{
+    visibility: visible;
+}
+/* Entradas de tipo texto y fecha */
+input[type="text"],
+input[type="date"] {
+    width: 80%;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+}
+/* Conjunto de campos */
+fieldset{
+    width: 80%;
+    margin-bottom: 0.5rem;
+}
+fieldset input[type="text"]{
+    width: 100%;
+}
+fieldset.c-lengthsections input[type="text"]:nth-child(1),
+.c-progressive fieldset input[type="text"]:nth-child(1){
+    margin-bottom: 1rem;
+}
+/* Conjunto de seleccion */
+select{
+    width: 80%;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+/* Entrada tipo radio */
+.c-pavements{
+    margin-bottom: 1rem;
+}
+/* Boton de verificar */
+button#checkinfo {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+/* Mostrar contenedor tipo pavimento */
+.c-pavementflex,
+.c-pavementrig{
+    display: none;
+}
+.active{
+    display: block;
+}
+/* Borde para campos validados exito */
+.validate{
+    border: 2px solid #009e35;
+}
+.no-valid{
+    border: 2px solid #da3030;
+}

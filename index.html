@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCIBol | Sistema de Evaluación de Pavimentos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Nuevo proyecto -->
+        <div class="c-newproject">
+            <h3>Nuevo Proyecto</h3>
+            <div class="c-commoninfo">
+                <form action="" id="commoninfo">
+                    <div class="c-namehighway">
+                        <label for="">Nombre del tramo</label>
+                        <input type="text" id="highway" >
+                        <span >El campo no es válido.</span>
+                    </div>
+                    <div class="c-nameinspector">
+                        <label for="">Nombre del inspector</label>
+                        <input type="text" id="inspector">
+                        <span c>El campo no es válido.</span>
+                    </div>
+                    <div class="c-typepavements">
+                        <label for="">Tipo de Pavimento</label>
+                        <div class="c-pavements">
+                            <input type="radio" id="flexible" name="pavement" checked>Pavimento flexible
+                            <input type="radio" id="rigido" name="pavement">Pavimento rigido
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="c-types">
+                <!-- Pavimento flexible -->
+                <div class="c-pavementflex">
+                    <form action="" id="formpavementflex">
+                        <div class="c-dateinspection">
+                            <label for="">Fecha de inspección</label>
+                            <input type="date" id="date">
+                            <span >El campo no es válido.</span>
+                        </div>
+                        <div class="c-roadwidth">
+                            <label for="">Ancho de calzada (metros)</label>
+                            <input type="text" id="roadwidth">
+                            <span >El campo no es válido.</span>
+                        </div>
+                        <div class="c-lengthhighway">
+                            <label for="">Longitud del tramo (kilometros)</label>
+                            <input type="text" id="lengthhighway">
+                            <span >El campo no es válido.</span>
+                        </div>
+                        <div class="c-lengthinspection">
+                            <label for="">Longitud de la unidad de inspección</label>
+                            <input type="text" id="lengthinspection">
+                            <span >El campo no es válido.</span>
+                        </div>
+                        <div class="c-numbersections">
+                            <label for="">Numero de secciones</label>
+                            <input type="text" id="numbersections">
+                        </div>
+                        <fieldset class="c-lengthsections">
+                            <legend>Longitud de secciones (kilometros)</legend>
+                            <input type="checkbox" id="editsections"> Editar secciones 
+                            <div class="c-sections">
+                                <input type="text" class="section" disabled>
+                                <input type="text" class="section" disabled>
+                            </div>
+                            <span >El campo no es válido.</span>
+                        </fieldset>
+                        <div class="c-standardeviation">
+                            <label for="">Desviación estandar</label>
+                            <select name="" id="">
+                                <option value="1">--- Seleccione ----</option>
+                                <option value="2">Primera evaluación</option>
+                                <option value="2">Evaluación anterior</option>
+                            </select>
+                            <input type="text" id="valuedeviation">
+                            <span >El campo no es válido.</span>
+                        </div>
+                        <div class="c-progressive">
+                            <fieldset>
+                                <legend>Progresivas iniciales</legend>
+                                <div class="">
+                                    <input type="text" class="progressive">
+                                    <input type="text" class="progressive">
+                                </div>
+                                <span >El campo no es válido.</span>
+                            </fieldset>
+                        </div>
+                    </form>     
+                </div>
+                <!-- Pavimento Rigido -->
+                <div class="c-pavementrig">
+                    <form action="" id="formpavementrig">
+                        <label for="">Numero de losas</label>
+                        <input type="text">
+                    </form>
+                </div>
+
+                <!-- boton verificar informacion -->
+                <div class="c-check">
+                    <button id="checkinfo" disabled>Verificar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Verificar la informacion -->
+        <div class="verifyinfo">
+
+        </div>
+    </div>
+    
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
